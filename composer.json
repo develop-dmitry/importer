@@ -1,0 +1,15 @@
+{
+    "name": "kozlov/importer",
+    "autoload": {
+        "psr-4": {
+            "Kozlov\\Importer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Kozlov",
+            "email": "develop.dmitry@gmail.com"
+        }
+    ],
+    "require": {}
+}
