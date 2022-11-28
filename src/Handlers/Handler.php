@@ -18,15 +18,7 @@ abstract class Handler
         $this->data = $data;
     }
 
-    public function import(): void
-    {
-        $this->setTitle($this->data['title']);
-        $this->setContent($this->data['content']);
-        $this->setPrice($this->data['price']);
-        $this->setThumbnail($this->data['thumbnail']);
-        $this->setCategories($this->data['categories']);
-        $this->setAttributes($this->data['attributes']);
-    }
+    public abstract function import(): void;
 
     public function hasErrors(): bool
     {
@@ -42,16 +34,4 @@ abstract class Handler
     {
         $this->errors[] = $error;
     }
-
-    protected abstract function setTitle(string $title);
-
-    protected abstract function setContent(string $content);
-
-    protected abstract function setPrice(string $price);
-
-    protected abstract function setAttributes(string $attributes);
-
-    protected abstract function setThumbnail(string $thumbnail);
-
-    protected abstract function setCategories(string $categories);
 }

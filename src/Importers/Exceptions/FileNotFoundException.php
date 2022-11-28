@@ -1,6 +1,6 @@
 <?php
 
-namespace Kozlov\Importer\Exceptions;
+namespace Kozlov\Importer\Importers\Exceptions;
 
 use Exception;
 
